@@ -95,10 +95,10 @@ func TestValidNumerals(t *testing.T) {
 	for _, testCase := range testCases {
 		result, err := romanToArabic(testCase.roman)
 		if err != nil {
-			t.Errorf("recieved error for %s", testCase.roman)
+			t.Errorf("received error for %s", testCase.roman)
 		}
 		if result != testCase.arabic {
-			t.Errorf("expected %d, got %d for %s", testCase.arabic, result, testCase.roman)
+			t.Errorf("expected '%d', got '%d' for %s", testCase.arabic, result, testCase.roman)
 		}
 	}
 }

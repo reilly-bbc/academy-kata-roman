@@ -126,7 +126,7 @@ func romanToArabic(s string) (int, error) {
 
 func main() {
 	if len(os.Args) != 2 {
-		err := errors.New("invalid arguments")
+		err := errors.New("exactly one argument is required")
 		log.Fatal(err)
 	}
 	numeralSequence := os.Args[1]
